@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url(fonts/Pixel.ttf) ;
+}
+
+body {
+    font-family: 'Pixel';
+    background-color: rgb(72, 72, 90);
+    height: 100vh;
+}
+
+header > h1 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: green;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.flappy-container {
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    left: 40%;
+    bottom: 50%;
+    width: 60px;
+}
+
+.par-canos {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cano .borda{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, rgb(2, 90, 2), rgb(0, 255, 0));
+    border: 2px solid black;
+}
+
+.cano .corpo{
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, rgb(2, 90, 2), rgb(0, 255, 0));
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.pontuacao {
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 10px;
+    font-size: 70px;
+    z-index: 100;
+}
